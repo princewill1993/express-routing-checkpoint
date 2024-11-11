@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <ul class="ul">
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+          <li><a href="service.html">Our Services</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article class="form-container">
+      <h1>Contact Us:</h1>
+
+      <form id="contactForm">
+        <div class="first-name">
+          <label for="fname">First Name</label>
+
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+            required
+          />
+        </div>
+
+        <div class="last-name">
+          <label for="lname">Last Name</label>
+
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+            required
+          />
+        </div>
+
+        <div class="country">
+          <label for="country">Country</label>
+
+          <select id="country" name="country" required>
+            <option value="australia">Australia</option>
+
+            <option value="canada">Canada</option>
+
+            <option value="usa">USA</option>
+          </select>
+        </div>
+
+        <div class="msg">
+          <label for="subject">Subject</label>
+
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write Your message.."
+            style="height: 200px"
+            required
+          ></textarea>
+        </div>
+
+        <button class="form-btn">Submit</button>
+      </form>
+    </article>
+
+    <footer></footer>
+  </body>
+</html>
